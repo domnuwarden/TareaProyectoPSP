@@ -5,17 +5,24 @@ import java.net.*;
  * Programa Servidor para el Chat Asíncrono.
  * Establece un ServerSocket y espera a que un cliente se conecte para iniciar
  * el intercambio de datos mediante hilos.
- * * @author Liviu
+ * @author Liviu
  * @version 1.0
  */
 public class ServidorChat {
+    /**
+     * Constructor por defecto.
+     */
+    public ServidorChat() {
+        // No-op
+    }
+
     /**
      * Método principal que inicia el servidor.
      * @param args Argumentos de línea de comandos (no utilizados).
      */
     public static void main(String[] args) {
         // Usamos el puerto configurado por defecto
-        int puerto = 55555;
+        int puerto = 55555; //
         
         try (ServerSocket servidor = new ServerSocket(puerto)) {
             System.out.println("SERVIDOR: Esperando conexión en el puerto " + puerto + "...");

@@ -4,17 +4,24 @@ import java.net.*;
 /**
  * Programa Cliente para el Chat Asíncrono.
  * Se conecta a un servidor remoto y lanza los hilos de comunicación.
- * * @author Liviu
+ * @author Liviu
  * @version 1.0
  */
 public class ClienteChat {
+    /**
+     * Constructor por defecto.
+     */
+    public ClienteChat() {
+        // No-op
+    }
+
     /**
      * Método principal que inicia el cliente.
      * @param args Argumentos de línea de comandos (no utilizados).
      */
     public static void main(String[] args) {
         String host = "localhost"; // Dirección del servidor
-        int puerto = 55555;
+        int puerto = 55555; //
 
         try {
             // Intento de conexión al servidor
